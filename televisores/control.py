@@ -1,7 +1,4 @@
 class Control:
-    def __init__(self, tv):
-        self._tv = tv
-
     def turnOn (self):
         self._estado = True
 
