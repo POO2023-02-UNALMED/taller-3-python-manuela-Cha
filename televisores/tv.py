@@ -26,12 +26,32 @@ class TV:
     
     def getVolumen (self):
         return self._volumen
+
+    def setVolument (self, volumen):
+        self._volumen = volumen
     
     def setControl (self, control):
         self._control = control
     
     def getControl (self):
         return self._control
+
+    def turnOn (self):
+        self._estado = True
+
+    def trunOff (self):
+        self._estado = False
+
+    def getEstado (self):
+        return self._estado
+
+    def canalUp (self):
+        if self._canal > 0 and self._canal < 120:
+            self._canal += 1
+
+    def canalDown (self):
+        if self._canal > 0 and self._canal < 120:
+            self._canal -= 1
 
     @classmethod
     def getNumTV (cls):
