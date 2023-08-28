@@ -1,4 +1,9 @@
 class Control:
+
+    def enlazar (self, tv):
+        self._tv = tv
+        self._tv.setControl(self)
+        
     def turnOn (self):
         self._estado = True
 
@@ -29,10 +34,6 @@ class Control:
     
     def setVolumen (self, volumen):
         self._volumen = volumen
-    
-    def enlazar (self, tv):
-        self._tv = tv
-        self._tv.setControl(self)
         
     def getTv (self):
         return self._tv
