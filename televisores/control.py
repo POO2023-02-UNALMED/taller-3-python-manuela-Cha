@@ -32,10 +32,12 @@ class Control:
             return self._tv.volumenDown()
     
     def setCanal (self, canal):
-        self._canal = canal
+        if self._tv != None:
+            return self._tv.setCanal(canal)
     
     def setVolumen (self, volumen):
-        self._volumen = volumen
+        if self._tv != None:
+            return self._tv.setVolumen(volumen)
         
     def getTv (self):
         return self._tv
