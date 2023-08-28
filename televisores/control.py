@@ -5,11 +5,11 @@ class Control:
         self._tv.setControl(self)
         
     def turnOn (self):
-        if self._tv == False:
+        if self._tv != None:
             return self._tv.turnOn()
             
     def turnOff (self):
-        if self._tv == True:
+        if self._tv != None:
             return self._tv.turnOff()
 
     def getEstado (self):
