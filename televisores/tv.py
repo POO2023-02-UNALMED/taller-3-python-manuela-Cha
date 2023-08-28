@@ -58,11 +58,11 @@ class TV:
 
     def volumenDown (self):
         if self._estado == True and self._volumen > 0:
-            self.volumen -= 1
+            self._volumen -= 1
 
     def volumenUp (self):
         if self._estado == True and self._volumen < 7:
-            self.volumen += 1
+            self._volumen += 1
             
     @classmethod
     def getNumTV (cls):
