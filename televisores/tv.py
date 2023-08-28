@@ -18,6 +18,9 @@ class TV:
     def getCanal (self):
         return self._canal
 
+    def setCanal(self, canal):
+        self._canal = canal
+
     def setPrecio (self, precio):
         self._precio = precio
 
